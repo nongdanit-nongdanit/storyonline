@@ -1,0 +1,151 @@
+
+/* Form errors */
+form .error {
+	background: #FFDACC;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	font-weight: normal;
+}
+form .error-message {
+	-moz-border-radius: none;
+	-webkit-border-radius: none;
+	border-radius: none;
+	border: none;
+	background: none;
+	margin: 0;
+	padding-left: 4px;
+	padding-right: 0;
+}
+form .error,
+form .error-message {
+	color: #9E2424;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	-ms-box-shadow: none;
+	-o-box-shadow: none;
+	box-shadow: none;
+	text-shadow: none;
+}
+
+/** Notices and Errors **/
+.message {
+	clear: both;
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+	margin: 0 0 1em 0;
+	padding: 5px;
+}
+
+.success,
+.message,
+.cake-error,
+p.error,
+.error-message {
+    margin: .5em 0 1.3em;
+    border: 1px solid #a2d246;
+    background-repeat: no-repeat;
+    background-position: 10px 50%;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: 0 1px 1px #fff inset;
+    -webkit-box-shadow: 0 1px 1px #fff inset;
+    box-shadow: 0 1px 1px #fff inset;
+    color: #000;
+    background-color: #ebf8a4;
+}
+
+p.error {
+	font-family: Monaco, Consolas, Courier, monospace;
+	font-size: 120%;
+	padding: 0.8em;
+	margin: 1em 0;
+}
+p.error em {
+	font-weight: normal;
+	line-height: 140%;
+}
+.notice {
+	color: #000;
+	display: block;
+	font-size: 120%;
+	padding: 0.8em;
+	margin: 1em 0;
+}
+.success {
+	color: #fff;
+}
+.error_su{
+    background: #FFDACC;
+    padding: 2px;
+    line-height: 30px;    
+}
+input.form-control, select.form-control{
+    width: 500px;
+}
+.ajax-loader{
+    display: none;
+    position: fixed;
+    top: 40%;
+    left: 45%;
+    z-index: 3243;
+}
+.width200{ width: 200px !important;}
+.delete2{
+    background: url(../img/icon_x_center.png) 0 4px no-repeat;
+    padding: 0 10px;
+    text-indent: -999px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.payboxfixed {
+    bottom: 0;
+    position: fixed;
+    right: 0;
+}
+.paybox {
+    display: none;
+    left: 0;
+    position: absolute;
+    top: 0;
+    z-index: 8000;
+}
+.paybox_skins {
+    background: none repeat scroll 0 0 #F9F9F9;
+    border: 0 none;
+    border-radius: 4px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    color: #444444;
+    margin: 0;
+    outline: medium none;
+    position: relative;
+    text-shadow: none;
+    vertical-align: top;
+}
+#box_content {
+    border-radius: 2px 2px 0 0;
+    width: 1040px;
+}
+#form_title {
+    background: none repeat scroll 0 0 #376AFC;
+    height: 38px;
+    overflow: hidden;
+    padding: 10px 10px 0;
+    width: 1020px;
+}
+.bt_close {
+    background: url("../img/bt_close.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border-style: none;
+    cursor: pointer;
+    float: right;
+    height: 18px;
+    text-indent: 1000px;
+    width: 18px;
+}
+.danhsachcauhoi .paybox_wrap {top: 1020px !important;}
+.print p{ margin: 5px; padding: 5px;}
+.print_cont p{ font-weight: bold;}
+table li{ background: none;}

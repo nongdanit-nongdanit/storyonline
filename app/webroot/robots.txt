@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Allow: /*.js$
+Allow: /*.css$
+Disallow: /lib/
+Disallow: /plugins/
+Disallow: /vendors/
+Disallow: /DB/
+Sitemap: http://www.truyenweb.info/site_map_www_truyenweb.xml
+Sitemap: http://truyenweb.info/site_map_truyenweb.xml

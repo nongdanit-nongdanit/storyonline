@@ -1,0 +1,53 @@
+#Bao ve file .htaccess
+<files ~ "^.*\.([Hh][Tt][Aa])">
+    order allow,deny
+    deny from all
+    satisfy all
+</files>
+#Bao ve file database.php
+<files app/Config/database.php>
+    order allow,deny
+    deny from all
+</files>
+# Khong cho phep xem thu muc liet ke
+Options All -Indexes
+<IfModule mod_rewrite.c>
+   RewriteEngine on
+   RewriteBase /
+   RewriteCond %{HTTP_HOST} ^www.truyenweb.info$ [NC]
+   RewriteRule ^(.*)$ http://truyenweb.info/$1 [L,R=301]
+   RewriteRule    ^$ app/webroot/    [L]
+   RewriteRule    (.*) app/webroot/$1 [L]
+   RewriteCond %{REQUEST_FILENAME} !-f
+   RewriteCond %{REQUEST_FILENAME} !-d
+</IfModule>
+## EXPIRES CACHING ##
+#<IfModule mod_expires.c>
+#    ExpiresActive On
+#    ExpiresByType image/jpg "access 1 year"
+#    ExpiresByType image/jpeg "access 1 year"
+#    ExpiresByType image/gif "access 1 year"
+#    ExpiresByType image/png "access 1 year"
+#    ExpiresByType text/css "access 1 month"
+#    ExpiresByType application/pdf "access 1 month"
+#    ExpiresByType text/x-javascript "access 1 month"
+#    ExpiresByType application/x-shockwave-flash "access 1 month"
+#    ExpiresByType image/x-icon "access 1 year"
+#    ExpiresDefault "access 2 days"
+#</IfModule>
+#<IfModule mod_headers.c>
+#    <FilesMatch "\.(ico|jpg|jpeg|png|gif|css)$">
+#        Header set Cache-Control "max-age=2678400, public"
+#    </FilesMatch>
+#    <FilesMatch "\.(html|htm)$">
+#        Header set Cache-Control "max-age=7200, private, must-revalidate"
+#    </FilesMatch>
+#    <FilesMatch "\.(pdf)$">
+#        Header set Cache-Control "max-age=86400, public"
+#    </FilesMatch>
+#    <FilesMatch "\.js$">
+#        Header set Cache-Control "max-age=2678400, private"
+#    </FilesMatch>
+#</IfModule>
+
+## EXPIRES CACHING ##
